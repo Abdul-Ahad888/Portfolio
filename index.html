@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortCode</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            background: #FFFFFF;
+            background: -webkit-linear-gradient(to bottom, #FFFFFF, #000000);
+            background: linear-gradient(to bottom, #FFFFFF, #000000);
+            background-repeat: no-repeat;
+            height: auto;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="loader-wrapper">
+        <div class="loader-container">
+            <div class="loader"></div>
+            <div class="loader"></div>
+            <div class="loader"></div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary px-4 py-2"
+            style="border-bottom: 1px solid rgb(190, 190, 190);">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bolder fs-1" href="./index.html"><span
+                        class="text-primary">Port</span>Code</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ps-5" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a style="font-size: 18px;" class="nav-link active ms-0 ms-md-5 fw-normal"
+                                aria-current="page" href="./index.html">Ho<span>me</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="font-size: 18px;" class="nav-link ms-0 ms-md-4 fw-normal"
+                                href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="font-size: 18px;" class="nav-link ms-0 ms-md-4 fw-normal"
+                                href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="float-end">
+                    <a href="./login.html"
+                        class="btn fw-normal px-4 py-2 me-0 me-md-3 text-black border border-1 border-black rounded-0">Login
+                        In</a>
+                    <a href="./sign.html"
+                        class="fw-normal px-4 py-2 me-0 me-md-3 text-decoration-none btn text-light btn-primary">Sign
+                        Up</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid bg-body-tertiary"
+        style="padding-bottom: 100px; border-bottom: 1px solid rgb(190, 190, 190); box-shadow: 0px 10px 20px black;">
+        <div class="px-5 pt-5">
+            <div class="float-start">
+                <h1 class="text-black fw-semibold">Check Out the Website <span class="text-primary py-2"
+                        style="border-bottom: 2px solid #0d6efd;">Templates</span></h1>
+            </div>
+            <div class="float-md-end pe-3 d-md-inline-block d-block" style="border-bottom: 1px solid black;">
+                <input type="text" class="inp-cus-bor border-0 m-2 p-2 bg-transparent"
+                    placeholder="Search all templates...">
+                <span class="bi bi-search d-md-inline-block d-none"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="text-center text-md-start ps-0 ps-md-5 ms-0 ms-md-5 mt-5 mb-3">
+            <small id="cardCount" class="text-black fw-semibold fs-6"></small>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <small class="text-danger" id="listingError">No Templates Found</small>
+    </div>
+
+    <section class="sec-2">
+        <div class="container-fluid pt-2 px-1 px-md-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="card">
+                <!-- Content For Script.js ==> ( Cards JS ) -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-5" style="border-top: 1px solid rgb(190, 190, 190);">
+        <div class="text-center p-5">
+            <a href="#" class="fw-semibold text-white fs-6 text-decoration-none">&copy Copyright <span
+                    class="mx-1 rounded-2"
+                    style="color: #0d6efd; border: 2px solid #0d6efd; background-color: #ffffff; padding: 5px 10px;">Prot<span
+                        style="color: black;">Code</span></span> Rights Are Reserved 2023</a>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="./script.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
